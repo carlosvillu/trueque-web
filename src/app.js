@@ -1,1 +1,1 @@
-window.alert('Hola Mundo!!!')
+window.alert('Esto es una prueba!!!')
