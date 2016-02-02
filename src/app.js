@@ -1,3 +1,6 @@
-import 'bulma'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-window.alert('Esto es una prueba!!!')
+import Layout from './pages/layout'
+
+ReactDOM.render(<Layout />, document.getElementById('root'))

@@ -21,6 +21,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "css-loader": "^0.23.1",
     "hjs-webpack": "7.0.0",
+    "live-server": "^0.9.1",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.8.0",
     "precommit-hook": "^3.0.0",
@@ -39,7 +40,11 @@
     ]
   },
   "dependencies": {
-    "bulma": "0.0.8"
+    "normalize.css": "^3.0.3",
+    "react": "^0.14.7",
+    "react-addons-css-transition-group": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-toolbox": "^0.14.1"
   },
   "babel": {
     "presets": [
