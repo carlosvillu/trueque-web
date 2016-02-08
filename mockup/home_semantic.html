@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Test mockup Trueke with Semantic-UI</title>
+
+        <link rel="stylesheet" type="text/css" class="ui" href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css">
+
+        <style media="screen">
+            #topMenu{
+                padding: 14px 0 14px 0;
+                margin-bottom: 28px;
+            }
+            #searchBar .input{
+                opacity: .5;
+            }
+            #topMenu input.prompt:focus{
+                opacity: 1;
+            }
+            #topMenu.ui.menu{
+                border-radius: 0;
+            }
+            #siteTitle a h1{
+                width: 120px;
+                height: 38px;
+                display: block;
+                text-indent: -9999px;
+                background: url('./img/logo.svg') no-repeat;
+                background-size: cover;
+            }
+            #siteTitle{
+                float: left;
+            }
+            #addOneAdd{
+                float: right;
+            }
+            #searchBar{
+                margin: 0 auto;
+            }
+            .button span.buttonText{
+                margin-left: .5em;
+            }
+            #searchButton{
+                display: none;
+            }
+
+            @media only screen and (max-width:767px){
+                #searchBar{
+                    display: table-cell;
+                    background: white;
+                    border-bottom: 1px solid #ddd;
+                }
+                #searchBar .input{
+                    width: 100%;
+                    opacity: 1;
+                    border-color: red
+                }
+                #searchButton{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                #addOneAdd{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                .button span.buttonText{
+                    display: none;
+                }
+                #siteTitle{
+                    width: 100%;
+                }
+                #siteTitle a h1{
+                    margin: 0 auto;
+                }
+                #topMenu .button{
+                    background: rgba(255,255,255,.3);
+                }
+            }
+
+            /* Cards */
+            .grid.container .card{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--  TOP MENU
+        ----------------------------------------------------------------------->
+        <div class="ui top borderless inverted blue menu " id="topMenu">
+            <div class="ui grid three columns centered container">
+                <div class="column" id="siteTitle">
+                    <a href="#"><h1>Trueke</h1></a>
+                </div>
+                <div class="center aligned column " id="searchBar">
+                    <div class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" placeholder="Buscar anuncios..." type="text">
+                            <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
+                    </div>
+                </div>
+                <div class="right aligned column" id="addOneAdd">
+                    <div class="ui button icon red">
+                        <i class="add icon"></i> <span class="buttonText">Nuevo Anuncio</span>
+                    </div>
+                </div>
+                <div class="left aligned column" id="searchButton">
+                    <div class="ui button icon red">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  ADS LIST
+        ----------------------------------------------------------------------->
+        <div class="ui stackable grid container">
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 180 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200?_c=123123" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200?_c=12324234" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+
+                        <div class="content">
+                            <div class="description">Texto de 140 caracteres, con suerte también tendrá <a href="#">#hashtags</a> para filtrar el contenido</div>
+                        </div>
+
+                        <div class="extra content">
+                            <a href="#"><span class="right floated"><i class="share icon"></i> </span></a>
+                            <a href="#"><span><i class="comments icon"></i> 75 ofertas </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  NAVIGATION
+            ------------------------------------------------------------------->
+            <div class="sixteen wide centered row">
+                <div class="ui pagination menu">
+                    <a class="active item">
+                        1
+                    </a>
+                    <div class="disabled item">... </div>
+                    <a class="item">
+                        10
+                    </a>
+                    <a class="item">
+                        11
+                    </a>
+                    <a class="item">
+                        12
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="//oss.maxcdn.com/jquery/2.2.0/jquery.min.js"></script>
+        <script src="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.js"></script>
+    </body>
+</html>

@@ -7,7 +7,7 @@
     "start": "hjs-dev-server",
     "build": "webpack",
     "deploy": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags && npm run build && surge -p public -d trueque.surge.sh",
-    "lint": "standard",
+    "lint": "standard src/**/*.js",
     "validate": "npm ls"
   },
   "keywords": [],
@@ -30,9 +30,7 @@
     "style-loader": "^0.13.0"
   },
   "pre-commit": [
-    "lint",
-    "validate",
-    "test"
+    "lint"
   ],
   "standard": {
     "ignore": [
@@ -42,9 +40,7 @@
   "dependencies": {
     "normalize.css": "^3.0.3",
     "react": "^0.14.7",
-    "react-addons-css-transition-group": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-toolbox": "^0.14.1"
+    "react-dom": "^0.14.7"
   },
   "babel": {
     "presets": [

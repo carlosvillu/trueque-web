@@ -1,0 +1,76 @@
+#topMenu{
+    padding: 14px 0 14px 0;
+    margin-bottom: 28px;
+}
+#searchBar .input{
+    opacity: .5;
+}
+#topMenu input.prompt:focus{
+    opacity: 1;
+}
+#topMenu.ui.menu{
+    border-radius: 0;
+}
+#siteTitle a h1{
+    width: 120px;
+    height: 38px;
+    display: block;
+
+    background-size: cover;
+}
+#siteTitle{
+    float: left;
+}
+#addOneAdd{
+    float: right;
+}
+#searchBar{
+    margin: 0 auto;
+}
+.button span.buttonText{
+    margin-left: .5em;
+}
+#searchButton{
+    display: none;
+}
+
+@media only screen and (max-width:767px){
+    #searchBar{
+        display: table-cell;
+        background: white;
+        border-bottom: 1px solid #ddd;
+    }
+    #searchBar .input{
+        width: 100%;
+        opacity: 1;
+        border-color: red
+    }
+    #searchButton{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #addOneAdd{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .button span.buttonText{
+        display: none;
+    }
+    #siteTitle{
+        width: 100%;
+    }
+    #siteTitle a h1{
+        margin: 0 auto;
+    }
+    #topMenu .button{
+        background: rgba(255,255,255,.3);
+    }
+}
+
+/* Cards */
+.grid.container .card{
+    width: 100%;
+}
