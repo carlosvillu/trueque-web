@@ -11,6 +11,7 @@ module.exports = getConfig({
         '<html lang="es">',
           '<head>',
             '<meta charset="utf-8">',
+            '<meta name="viewport" content="width=device-width, user-scalable=no">',
             '<link href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet" type="text/css" />',
             '<link href="' + data.css + '" rel="stylesheet" type="text/css" />',
           '</head>',
