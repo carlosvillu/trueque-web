@@ -143,8 +143,17 @@
                             <div class="text">
                                 Gracias! que rico
                             </div>
-                            <div class="actions">
-                                <a class="reply">Responder</a>
+                        </div>
+                        <div class="comment">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Hoy a las 5:42PM</span>
+                            </div>
+                            <div class="imageComment">
+                                <img src="http://placehold.it/900x600" alt="lorem" class="ui fluid image" />
+                            </div>
+                            <div class="text">
+                                Te oferto este lechón
                             </div>
                         </div>
                         <div class="comment">
@@ -157,24 +166,6 @@
                             </div>
                             <div class="text">
                                 Te oferto este lechón
-                            </div>
-                            <div class="actions">
-                                <a class="reply">Responder</a>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <a class="author">Matt</a>
-                            <div class="metadata">
-                                <span class="date">Hoy a las 5:42PM</span>
-                            </div>
-                            <div class="imageComment">
-                                <img src="http://placehold.it/600x600" alt="lorem" class="ui fluid image" />
-                            </div>
-                            <div class="text">
-                                Te oferto este lechón
-                            </div>
-                            <div class="actions">
-                                <a class="reply">Responder</a>
                             </div>
                         </div>
 
@@ -184,14 +175,14 @@
                                   <input type="text" name="name" placeholder="Nombre" />
                                 </div>
                                 <div class="field">
-                                  <input type="email" name="name" placeholder="Email" />
-                                </div>
-                                <div class="ui field blue icon button">
-                                  <i class="icon upload"></i> Foto
-                                </div>
-                                <div class="field">
                                     <textarea></textarea>
+                                    <div class="countCharacters">
+                                        123
+                                    </div>
                                 </div>
+                                <input type="file" name="addPhoto" id="addPhoto" value="">
+                                <label for="addPhoto">Arrastra una foto o haz click aquí</label>
+
                                 <div class="ui blue labeled submit icon button">
                                   <i class="icon send"></i> Enviar
                                 </div>
@@ -288,6 +279,10 @@
             $(".adButton").click(function(){
                 $("#adModal").toggle(300);
             });
+
+            $(".imageComment").click(function(){
+                $(this).toggleClass('is-expanded')
+            })
         });
         </script>
 

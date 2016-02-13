@@ -135,12 +135,12 @@ section.grid3d .content{
 }
 .imageComment{
     width: 100%;
-    max-height: 300px;
+    max-height: 200px;
     overflow: hidden;
     display: block;
     margin: 10px 0 10px;
 }
-.imageComment:hover{
+.imageComment.is-expanded{
     max-height: 900px;
     transition: 0.8s;
 }
@@ -156,8 +156,9 @@ section.grid3d .content{
 }
 
 #offerts .comment{
-    padding: 15px;
-    background-color: #eee;
+    padding: 20px;
+    box-shadow: 0 1px 5px #eee;
+    margin-bottom: 20px;
 }
 #offerts .comment.author{
     text-align: right;
@@ -171,6 +172,7 @@ section.grid3d .content{
 #offerts .comments{
     width: 100%;
     max-width: none;
+    padding: 0 20px;
 }
 #offerts .comments .text,
 #offerts .comments .text p{
@@ -181,6 +183,34 @@ section.grid3d .content{
     padding: 15px;
     margin-left: 0;
     background: #eee;
+}
+input#addPhoto{display: none;}
+label[for="addPhoto"]{
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #DEDEDE;
+    color: #666;
+    padding: 2em 0;
+    clear: both;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: .28571429rem;
+}
+label[for="addPhoto"]:hover,
+label[for="addPhoto"]:active{
+    background-color: #666;
+    border-color: #666;
+    color: #fff;
+}
+.field{
+    position: relative;
+}
+.countCharacters{
+    position: absolute;
+    right: 10px;
+    margin-bottom: 5px;
+    color: #666;
 }
 /* mobie view */
 @media only screen and (max-width:767px){
