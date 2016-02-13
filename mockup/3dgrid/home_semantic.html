@@ -51,7 +51,15 @@
         ----------------------------------------------------------------------->
         <div class="container" id="searchModal">
             <span class="buttonClose icon3d searchButton"></span>
-            Search
+            <div class="center aligned column " id="searchBar">
+                <div class="ui category search">
+                    <div class="ui icon input">
+                        <input class="prompt" placeholder="Buscar anuncios..." type="text">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
         </div>
 
         <!--  AD
@@ -273,7 +281,6 @@
         $(document).ready(function(){
             <!-- Search Modal -->
             $(".searchButton").click(function(){
-                debugger
                 $("#searchModal").toggle(300);
             });
 

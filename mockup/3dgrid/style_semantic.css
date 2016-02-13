@@ -184,16 +184,6 @@ section.grid3d .content{
 }
 /* mobie view */
 @media only screen and (max-width:767px){
-    #searchBar{
-        display: table-cell;
-        background: white;
-        border-bottom: 1px solid rgb(33, 133, 208);
-        width: 100%;
-    }
-    #searchBar input.prompt,
-    #searchBar .search.icon{
-        opacity: 1;
-    }
     #addOneAdd{
         position: absolute;
         top: 0;
@@ -206,13 +196,6 @@ section.grid3d .content{
     }
     .button span.buttonText{
         display: none;
-    }
-    #siteTitle{
-        width: 100%;
-        text-align: center;
-    }
-    #topMenu .button{
-        /*background: rgba(255,255,255,.3);*/
     }
     .anuncio_home p{
         font-size: 2em;
