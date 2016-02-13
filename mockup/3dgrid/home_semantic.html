@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test mockup Trueke with Semantic-UI</title>
+
+        <link rel="stylesheet" type="text/css" class="ui" href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="style_semantic.css">
+
+        <!-- Grid 3D -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+
+    </head>
+    <body>
+
+        <!--  TOP MENU
+        ----------------------------------------------------------------------->
+        <section class="ui top borderless menu clearfix " id="topMenu">
+            <div class="ui grid three columns centered container">
+                <div class="left aligned column " id="search">
+                    <div class="ui button icon blue searchButton" >
+                        <i class="search icon "></i> <span class="buttonText">Buscar</span>
+                    </div>
+                </div>
+                <div class="center aligned column" id="siteTitle">
+                    <a href="#"><h1>Trueke</h1></a>
+                </div>
+                <!-- <div class="center aligned column " id="searchBar">
+                    <div class="ui category search">
+                        <div class="ui icon input">
+                            <input class="prompt" placeholder="Buscar anuncios..." type="text">
+                            <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
+                    </div>
+                </div> -->
+                <div class="right aligned column" id="addOneAdd">
+                    <div class="ui button icon blue adButton">
+                        <i class="add icon"></i> <span class="buttonText">Nuevo Anuncio</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--  SEARCH
+        ----------------------------------------------------------------------->
+        <div class="container" id="searchModal">
+            <span class="buttonClose icon3d searchButton"></span>
+            Search
+        </div>
+
+        <!--  AD
+        ----------------------------------------------------------------------->
+        <div class="container" id="adModal">
+            <span class="buttonClose icon3d adButton"></span>
+            Add new Ad
+        </div>
+
+        <!--  ADS LIST
+        ----------------------------------------------------------------------->
+        <section class="grid3d vertical container" id="grid3d">
+            <div class="grid-wrap ui container">
+
+                <!--  MESSAGE HOME
+                --------------------------------------------------------------->
+                <section class="anuncio anuncio_home ui container">
+                    <p>
+                        Conseguí lo que quieras sin dinero.
+                    <br />
+                        ¡Buscalo ahora! y <u>ofrecé otro a cambio</u>
+                    </p>
+                </section>
+
+                <div class="grid">
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <figure><img src="http://placehold.it/350x350" alt="lorem" /></figure>
+                    <!-- <figure><img src="img/5.jpg" alt="img05"/></figure>
+                    <figure><img src="img/8.jpg" alt="img08"/></figure>
+                    <figure><img src="img/2.jpg" alt="img02"/></figure>
+                    <figure><img src="img/4.jpg" alt="img04"/></figure>
+                    <figure><img src="img/3.jpg" alt="img03"/></figure>
+                    <figure><img src="img/9.jpg" alt="img09"/></figure>
+                    <figure><img src="img/6.jpg" alt="img06"/></figure>
+                    <figure><img src="img/7.jpg" alt="img07"/></figure> -->
+                </div>
+            </div><!-- /grid-wrap -->
+            <div class="content">
+                <div class="singleAddContainer ">
+                    <img src="http://placehold.it/600x600" alt="lorem" />
+                    <h2 class="header">Descripción del producto</h2>
+                    <p class="description">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+
+                    <!--  OFFERTS
+                    ----------------------------------------------------------------------->
+                <div class="divider"></div>
+                <div id="offerts">
+                    <div class="ui comments">
+                        <h2 class="header">Ofertas</h2>
+
+                        <div class="comment">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Hoy a las 5:42PM</span>
+                            </div>
+                            <div class="imageComment">
+                                <img src="http://placehold.it/600x600" alt="lorem" class="ui fluid image" />
+                            </div>
+                            <div class="text">
+                                Te oferto este lechón
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Responder</a>
+                            </div>
+                        </div>
+                        <div class="comment author">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Hoy a las 5:42PM</span>
+                            </div>
+                            <div class="text">
+                                Gracias! que rico
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Responder</a>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Hoy a las 5:42PM</span>
+                            </div>
+                            <div class="imageComment">
+                                <img src="http://placehold.it/600x600" alt="lorem" class="ui fluid image" />
+                            </div>
+                            <div class="text">
+                                Te oferto este lechón
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Responder</a>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                                <span class="date">Hoy a las 5:42PM</span>
+                            </div>
+                            <div class="imageComment">
+                                <img src="http://placehold.it/600x600" alt="lorem" class="ui fluid image" />
+                            </div>
+                            <div class="text">
+                                Te oferto este lechón
+                            </div>
+                            <div class="actions">
+                                <a class="reply">Responder</a>
+                            </div>
+                        </div>
+
+                          <form class="ui reply form">
+                              <h2 class="header">Ofertar</h2>
+                                <div class="field">
+                                  <input type="text" name="name" placeholder="Nombre" />
+                                </div>
+                                <div class="field">
+                                  <input type="email" name="name" placeholder="Email" />
+                                </div>
+                                <div class="ui field blue icon button">
+                                  <i class="icon upload"></i> Foto
+                                </div>
+                                <div class="field">
+                                    <textarea></textarea>
+                                </div>
+                                <div class="ui blue labeled submit icon button">
+                                  <i class="icon send"></i> Enviar
+                                </div>
+                          </form>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <div>
+                    <div class="dummy-img"></div>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                    <p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+                </div>
+                <span class="loading"></span>
+                <span class="icon3d close-content"></span>
+            </div>
+        </section>
+
+        <!--  NAVIGATION
+        ----------------------------------------------------------------------->
+        <div class="ui grid container">
+            <div class="sixteen wide centered row">
+                <div class="ui pagination menu">
+                    <a class="active item">
+                        1
+                    </a>
+                    <div class="disabled item">... </div>
+                    <a class="item">
+                        10
+                    </a>
+                    <a class="item">
+                        11
+                    </a>
+                    <a class="item">
+                        12
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="//oss.maxcdn.com/jquery/2.2.0/jquery.min.js"></script>
+        <script src="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.js"></script>
+
+        <!-- Grid 3D -->
+        <script src="js/classie.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/grid3d.js"></script>
+        <script>
+            new grid3D( document.getElementById( 'grid3d' ) );
+        </script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            <!-- Search Modal -->
+            $(".searchButton").click(function(){
+                debugger
+                $("#searchModal").toggle(300);
+            });
+
+            <!-- Ad Modal -->
+            $(".adButton").click(function(){
+                $("#adModal").toggle(300);
+            });
+        });
+        </script>
+
+    </body>
+</html>

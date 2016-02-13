@@ -75,6 +75,18 @@ section#topMenu{
     margin: 1em 0;
 }
 
+/* Cards */
+.grid.container .card{
+    width: 100%;
+}
+
+/* offerts */
+#offerts .comments{
+    width: 100%;
+    max-width: none;
+}
+
+/* mobie view */
 @media only screen and (max-width:767px){
     #searchBar{
         display: table-cell;
@@ -109,9 +121,4 @@ section#topMenu{
     .anuncio_home p{
         font-size: 2em;
     }
-}
-
-/* Cards */
-.grid.container .card{
-    width: 100%;
 }

@@ -1,0 +1,220 @@
+body{
+    background-color: #fafafa;
+}
+section#topMenu{
+    padding: 14px 0 14px 0;
+    margin-bottom: 28px;
+    position: relative;
+}
+#searchBar .input{
+  width: 100%;
+}
+#searchBar input.prompt{
+    opacity: .5;
+    border-color: rgb(33, 133, 208);
+}
+#searchBar input.prompt:placeholder-shown,
+#searchBar input.prompt::-webkit-input-placeholder,
+#searchBar .search.icon{
+    color: rgb(33, 133, 208);
+}
+#searchBar input.prompt:focus{
+    opacity: 1;
+}
+#topMenu.ui.menu{
+    border-radius: 0;
+}
+#siteTitle a h1{
+    width: 120px;
+    height: 38px;
+    display: block;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    color: rgb(33, 133, 208);
+    font-style: italic;
+    margin: 0 auto;
+}
+#addOneAdd{
+    float: right;
+}
+
+#search{
+    float: left;
+}
+#searchBar{
+    margin: 0 auto;
+}
+.button span.buttonText{
+    margin-left: .5em;
+}
+
+#searchModal{
+    display: none;
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+}
+#adModal{
+    display: none;
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+}
+
+/* anuncios */
+.anuncio{
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+.anuncio_home{
+    margin-top: -28px;
+    margin-bottom: 28px;
+    background-color: #fafafa;
+    text-align: center;
+    position: relative;
+    display: block;
+    /*border-bottom: 2px solid rgb(33, 133, 208);*/
+}
+.anuncio_home p{
+    font-size: 3em;
+    margin: 0;
+    font-style: italic;
+    color: rgb(33, 133, 208);
+    margin: 1em 0;
+}
+
+section.grid3d .content{
+    padding: 30px;
+}
+
+.singleAddContainer{
+    width: 100%;
+    position: relative !important;
+    text-align: left;
+}
+.singleAddContainer img{
+    max-width: 100%;
+    height: auto;
+    max-height: 900px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.singleAddContainer h2{
+    text-align: center;
+}
+.singleAddContainer p{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;;
+}
+.singleAddContainer h2.header{
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.singleAddContainer p.description{
+    font-size: 24px;
+}
+
+.divider{
+    border-top: 1px solid #333;
+    width: 30%;
+    margin: 2em auto;
+}
+.actions{
+    text-align: right;
+}
+.imageComment{
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: block;
+    margin: 10px 0 10px;
+}
+.imageComment:hover{
+    max-height: 900px;
+    transition: 0.8s;
+}
+/* Cards */
+.grid.container .card{
+    width: 100%;
+}
+
+/* offerts */
+#offerts{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#offerts .comment{
+    padding: 15px;
+    background-color: #eee;
+}
+#offerts .comment.author{
+    text-align: right;
+    padding: 15px;
+    background-color: #A6CCE8;
+}
+#offerts .comment.author .author{
+    float: right;
+    margin-left: 1em;
+}
+#offerts .comments{
+    width: 100%;
+    max-width: none;
+}
+#offerts .comments .text,
+#offerts .comments .text p{
+    text-align: left ;
+    font-size: 18px
+}
+#offerts .ui.comments .comment .comments{
+    padding: 15px;
+    margin-left: 0;
+    background: #eee;
+}
+/* mobie view */
+@media only screen and (max-width:767px){
+    #searchBar{
+        display: table-cell;
+        background: white;
+        border-bottom: 1px solid rgb(33, 133, 208);
+        width: 100%;
+    }
+    #searchBar input.prompt,
+    #searchBar .search.icon{
+        opacity: 1;
+    }
+    #addOneAdd{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #search{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .button span.buttonText{
+        display: none;
+    }
+    #siteTitle{
+        width: 100%;
+        text-align: center;
+    }
+    #topMenu .button{
+        /*background: rgba(255,255,255,.3);*/
+    }
+    .anuncio_home p{
+        font-size: 2em;
+    }
+}
