@@ -209,6 +209,7 @@ label[for="addPhoto"]:active{
 .countCharacters{
     position: absolute;
     right: 10px;
+    bottom: 0;
     margin-bottom: 5px;
     color: #666;
 }

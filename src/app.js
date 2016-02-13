@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import './style.scss'
+import './styles/style.scss'
+import './styles/3dgrid.scss'
 
 import Layout from './pages/layout'
 

@@ -3,17 +3,21 @@ import Ad from '../ad'
 
 const Ads = ({grid}) => {
   return (
-    <div className='ui stackable grid container'>
+      <section className='grid3d vertical container' id='grid3d'>
+         <div className='grid-wrap ui container'>
+             <div className='grid'>
     {
       grid.map((ad) => {
         return (
-          <div className='eight wide tablet four wide computer column'>
-            <Ad {...ad}/>
-          </div>
+            <figure>
+                <Ad {...ad}/>
+            </figure>
         )
       })
     }
-    </div>
+            </div>
+        </div>
+    </section>
   )
 }
 
