@@ -49,22 +49,27 @@
 
         <!--  SEARCH
         ----------------------------------------------------------------------->
-        <div class="container" id="searchModal">
+        <div class="container searchModal">
             <span class="buttonClose icon3d searchButton"></span>
-            <div class="center aligned column " id="searchBar">
-                <div class="ui category search">
+            <div class="center aligned column searchBar">
+                <form action="#" method="post" class="searchForm">
+                    <input class="searchInput" type=text name="search" value="" placeholder="Escribe aquí">
+                </form>
+                <!-- EL PROBLEMA ES QUE MUESTRA LOS RESUTADOS DENTRO DE EL PROPIO DIV
+                <div class="ui search">
                     <div class="ui icon input">
                         <input class="prompt" placeholder="Buscar anuncios..." type="text">
                         <i class="search icon"></i>
                     </div>
                     <div class="results"></div>
                 </div>
+                 -->
             </div>
         </div>
 
         <!--  AD
         ----------------------------------------------------------------------->
-        <div class="container" id="adModal">
+        <div class="container adModal">
             <span class="buttonClose icon3d adButton"></span>
             Add new Ad
         </div>
@@ -272,12 +277,12 @@
         $(document).ready(function(){
             <!-- Search Modal -->
             $(".searchButton").click(function(){
-                $("#searchModal").toggle(300);
+                $(".searchModal").toggle(300);
             });
 
             <!-- Ad Modal -->
             $(".adButton").click(function(){
-                $("#adModal").toggle(300);
+                $(".adModal").toggle(300);
             });
 
             $(".imageComment").click(function(){
