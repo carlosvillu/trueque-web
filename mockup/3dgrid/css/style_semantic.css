@@ -1,31 +1,30 @@
 body{
     background-color: #fafafa;
 }
-section#topMenu{
+.topMenu{
     padding: 14px 0 14px 0;
     margin-bottom: 28px;
     position: relative;
 }
-#searchBar .input{
-  width: 100%;
+.searchBar .input{
+  width: 100%; /* o_O */
 }
-#searchBar input.prompt{
+.searchBar input.prompt{
     opacity: .5;
     border-color: rgb(33, 133, 208);
 }
-#searchBar input.prompt:placeholder-shown,
-#searchBar input.prompt::-webkit-input-placeholder,
-#searchBar .search.icon{
+.searchBar input.prompt:placeholder-shown,
+.searchBar input.prompt::-webkit-input-placeholder,
+.searchBar .search.icon{
     color: rgb(33, 133, 208);
 }
-#searchBar input.prompt:focus{
+.searchBar input.prompt:focus{
     opacity: 1;
 }
-#topMenu.ui.menu{
+.topMenu.ui.menu{
     border-radius: 0;
 }
-#siteTitle a h1{
-    width: 120px;
+.siteTitle a h1{
     height: 38px;
     display: block;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
@@ -33,14 +32,14 @@ section#topMenu{
     font-style: italic;
     margin: 0 auto;
 }
-#addOneAdd{
+.addOneAdd{
     float: right;
 }
 
-#search{
+.search{
     float: left;
 }
-#searchBar{
+.searchBar{
     margin: 0 auto;
 }
 .button span.buttonText{
@@ -63,6 +62,7 @@ section#topMenu{
     width: 100vw;
     height: 100vh;
     top: 0;
+    right: 0;
     z-index: 100;
 }
 
@@ -168,36 +168,36 @@ section.grid3d .content{
 }
 
 /* offerts */
-#offerts{
+.offerts{
     max-width: 600px;
     margin: 0 auto;
 }
 
-#offerts .comment{
+.offerts .comment{
     padding: 20px;
     box-shadow: 0 1px 5px #eee;
     margin-bottom: 20px;
 }
-#offerts .comment.author{
+.offerts .comment.author{
     text-align: right;
     padding: 15px;
     background-color: #A6CCE8;
 }
-#offerts .comment.author .author{
+.offerts .comment.author .author{
     float: right;
     margin-left: 1em;
 }
-#offerts .comments{
+.offerts .comments{
     width: 100%;
     max-width: none;
     padding: 0 20px;
 }
-#offerts .comments .text,
-#offerts .comments .text p{
+.offerts .comments .text,
+.offerts .comments .text p{
     text-align: left ;
     font-size: 18px
 }
-#offerts .ui.comments .comment .comments{
+.offerts .ui.comments .comment .comments{
     padding: 15px;
     margin-left: 0;
     background: #eee;

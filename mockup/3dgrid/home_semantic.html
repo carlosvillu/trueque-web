@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test mockup Trueke with Semantic-UI</title>
 
-        <link rel="stylesheet" type="text/css" class="ui" href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="style_semantic.css">
+        <link rel="stylesheet" href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css">
+        <link rel="stylesheet" href="css/style_semantic.css">
 
         <!-- Grid 3D -->
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/component.css">
         <script src="js/modernizr.custom.js"></script>
 
     </head>
@@ -19,17 +19,17 @@
 
         <!--  TOP MENU
         ----------------------------------------------------------------------->
-        <section class="ui top borderless menu clearfix " id="topMenu">
+        <section class="ui top borderless menu clearfix topMenu">
             <div class="ui grid three columns centered container">
-                <div class="left aligned column " id="search">
-                    <div class="ui button icon blue searchButton" >
-                        <i class="search icon "></i> <span class="buttonText">Buscar</span>
+                <div class="left aligned column search">
+                    <div class="ui button icon blue searchButton">
+                        <i class="search icon"></i> <span class="buttonText">Buscar</span>
                     </div>
                 </div>
-                <div class="center aligned column" id="siteTitle">
+                <div class="center aligned column siteTitle">
                     <a href="#"><h1>Trueke</h1></a>
                 </div>
-                <!-- <div class="center aligned column " id="searchBar">
+                <!-- <div class="center aligned column searchBar">
                     <div class="ui category search">
                         <div class="ui icon input">
                             <input class="prompt" placeholder="Buscar anuncios..." type="text">
@@ -38,7 +38,7 @@
                         <div class="results"></div>
                     </div>
                 </div> -->
-                <div class="right aligned column" id="addOneAdd">
+                <div class="right aligned column addOneAdd">
                     <div class="ui button icon blue adButton">
                         <i class="add icon"></i> <span class="buttonText">Nuevo Anuncio</span>
                     </div>
@@ -121,7 +121,7 @@
                     <!--  OFFERTS
                     ----------------------------------------------------------------------->
                 <div class="divider"></div>
-                <div id="offerts">
+                <div class="offerts">
                     <div class="ui comments">
                         <h2 class="header">Ofertas</h2>
 
@@ -185,7 +185,7 @@
                                         123
                                     </div>
                                 </div>
-                                <input type="file" name="addPhoto" id="addPhoto" value="">
+                                <input type="file" name="addPhoto" class="addPhoto" value="">
                                 <label for="addPhoto">Arrastra una foto o haz click aquí</label>
 
                                 <div class="ui blue labeled submit icon button">
@@ -270,25 +270,23 @@
         <script src="js/helper.js"></script>
         <script src="js/grid3d.js"></script>
         <script>
-            new grid3D( document.getElementById( 'grid3d' ) );
-        </script>
+          new grid3D( document.getElementById( 'grid3d' ) );
 
-        <script type="text/javascript">
-        $(document).ready(function(){
-            <!-- Search Modal -->
-            $(".searchButton").click(function(){
-                $(".searchModal").toggle(300);
-            });
+          $(document).ready(function(){
+              <!-- Search Modal -->
+              $(".searchButton").click(function(){
+                  $(".searchModal").toggle(300);
+              });
 
-            <!-- Ad Modal -->
-            $(".adButton").click(function(){
-                $(".adModal").toggle(300);
-            });
+              <!-- Ad Modal -->
+              $(".adButton").click(function(){
+                  $(".adModal").toggle(300);
+              });
 
-            $(".imageComment").click(function(){
-                $(this).toggleClass('is-expanded')
-            })
-        });
+              $(".imageComment").click(function(){
+                  $(this).toggleClass('is-expanded')
+              })
+          });
         </script>
 
     </body>
