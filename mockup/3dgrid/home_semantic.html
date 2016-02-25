@@ -51,10 +51,16 @@
         ----------------------------------------------------------------------->
         <div class="container searchModal">
             <span class="buttonClose icon3d searchButton"></span>
-            <div class="center aligned column searchBar">
-                <form action="#" method="post" class="searchForm">
+            <div class="center aligned column searchBar formMargin">
+              <div class="ui massive icon input">
+                <input type="text" placeholder="Escribe aquí">
+                <i class="search icon"></i>
+              </div>
+
+                <!-- <form action="#" method="post" class="searchForm">
                     <input class="searchInput" type=text name="search" value="" placeholder="Escribe aquí">
-                </form>
+                </form> -->
+
                 <!-- EL PROBLEMA ES QUE MUESTRA LOS RESUTADOS DENTRO DE EL PROPIO DIV
                 <div class="ui search">
                     <div class="ui icon input">
@@ -71,7 +77,29 @@
         ----------------------------------------------------------------------->
         <div class="container adModal">
             <span class="buttonClose icon3d adButton"></span>
-            Add new Ad
+            <div class="formMargin">
+              <form class="ui reply form">
+                  <h2 class="header">Nuevo anuncio</h2>
+                    <div class="field">
+                      <input type="text" name="name" placeholder="Nombre" />
+                    </div>
+                    <div class="field">
+                      <input type="text" name="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea></textarea>
+                        <div class="countCharacters">
+                            123
+                        </div>
+                    </div>
+                    <input type="file" id="addPhoto" name="addPhoto" class="addPhoto" value="">
+                    <label for="addPhoto">Arrastra una foto o haz click aquí</label>
+
+                    <div class="ui blue labeled submit icon button">
+                      <i class="icon send"></i> Enviar
+                    </div>
+              </form>
+          </div>
         </div>
 
         <!--  ADS LIST
@@ -185,8 +213,8 @@
                                         123
                                     </div>
                                 </div>
-                                <input type="file" name="addPhoto" class="addPhoto" value="">
-                                <label for="addPhoto">Arrastra una foto o haz click aquí</label>
+                                <input type="file" id="offertPhoto" name="addPhoto" class="addPhoto" value="">
+                                <label for="offertPhoto">Arrastra una foto o haz click aquí</label>
 
                                 <div class="ui blue labeled submit icon button">
                                   <i class="icon send"></i> Enviar

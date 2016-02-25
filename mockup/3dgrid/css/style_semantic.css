@@ -66,6 +66,12 @@ body{
     z-index: 100;
 }
 
+/* Forms */
+.formMargin{
+  margin: 60px auto;
+  width: 90%;
+  max-width: 600px;
+}
 /* Search */
 .searchForm{
 
@@ -202,7 +208,7 @@ section.grid3d .content{
     margin-left: 0;
     background: #eee;
 }
-input#addPhoto{display: none;}
+input.addPhoto{display: none;}
 label[for="addPhoto"]{
     width: 100%;
     background-color: #eee;
@@ -233,12 +239,12 @@ label[for="addPhoto"]:active{
 }
 /* mobie view */
 @media only screen and (max-width:767px){
-    #addOneAdd{
+    .addOneAdd{
         position: absolute;
         top: 0;
         right: 0;
     }
-    #search{
+    .search{
         position: absolute;
         top: 0;
         left: 0;
