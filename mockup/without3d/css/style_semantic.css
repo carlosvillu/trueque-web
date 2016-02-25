@@ -1,0 +1,283 @@
+body{
+    background-color: #fafafa;
+}
+.topMenu{
+    padding: 14px 0 14px 0;
+    margin-bottom: 28px;
+    position: relative;
+}
+.searchBar .input{
+  width: 100%; /* o_O */
+}
+.searchBar input.prompt{
+    opacity: .5;
+    border-color: rgb(33, 133, 208);
+}
+.searchBar input.prompt:placeholder-shown,
+.searchBar input.prompt::-webkit-input-placeholder,
+.searchBar .search.icon{
+    color: rgb(33, 133, 208);
+}
+.searchBar input.prompt:focus{
+    opacity: 1;
+}
+.topMenu.ui.menu{
+    border-radius: 0;
+}
+.siteTitle a h1{
+    height: 38px;
+    display: block;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    color: rgb(33, 133, 208);
+    font-style: italic;
+    margin: 0 auto;
+}
+.addOneAdd{
+    float: right;
+}
+
+.search{
+    float: left;
+}
+.searchBar{
+    margin: 0 auto;
+}
+.button span.buttonText{
+    margin-left: .5em;
+}
+
+.singleAdModal{
+    display: none;
+    position: absolute;;
+    background: #fff;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+}
+.searchModal{
+    display: none;
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+}
+.adModal{
+    display: none;
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.icon-topRight{
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  right:0px;
+}
+.icon-topRight.button{
+  border: 0px;
+  box-shadow: 0 0 0 #ffffff !important;
+}
+
+/* Forms */
+.formMargin{
+  margin: 60px auto;
+  width: 90%;
+  max-width: 600px;
+}
+/* Search */
+.searchForm{
+
+}
+.searchInput{
+    font-size: 44px;
+    color: #333;
+    width: 80%;
+    border: 0px;
+    box-shadow: 0 4px 0 #333;
+    margin: 60px auto;
+    display: block;
+}
+.searchInput:focus{
+    box-shadow: 0 4px 13px #333;
+}
+
+
+/* anuncios */
+.anuncio{
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+.anuncio_home{
+    margin-top: -28px;
+    margin-bottom: 28px;
+    background-color: #fafafa;
+    text-align: center;
+    position: relative;
+    display: block;
+    /*border-bottom: 2px solid rgb(33, 133, 208);*/
+}
+.anuncio_home p{
+    font-size: 3em;
+    margin: 0;
+    font-style: italic;
+    color: rgb(33, 133, 208);
+    margin: 1em 0;
+}
+
+section.grid3d .content{
+    padding: 30px;
+}
+
+.singleAddContainer{
+    width: 100%;
+    position: relative !important;
+    text-align: left;
+    margin-top: 50px;
+}
+.singleAddContainer img{
+    max-width: 100%;
+    height: auto;
+    max-height: 900px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.singleAddContainer h2{
+    text-align: center;
+}
+.singleAddContainer p{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;;
+}
+.singleAddContainer h2.header{
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.singleAddContainer p.description{
+    font-size: 24px;
+}
+
+.divider{
+    border-top: 1px solid #333;
+    width: 30%;
+    margin: 2em auto;
+}
+.actions{
+    text-align: right;
+}
+.imageComment{
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    display: block;
+    margin: 10px 0 10px;
+}
+.imageComment.is-expanded{
+    max-height: 900px;
+    transition: 0.8s;
+}
+/* Cards */
+.grid.container .card{
+    width: 100%;
+}
+
+/* offerts */
+.offerts{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.offerts .comment{
+    padding: 20px;
+    box-shadow: 0 1px 5px #eee;
+    margin-bottom: 20px;
+}
+.offerts .comment.author{
+    text-align: right;
+    padding: 15px;
+    background-color: #A6CCE8;
+}
+.offerts .comment.author .author{
+    float: right;
+    margin-left: 1em;
+}
+.offerts .comments{
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+}
+.offerts .comments .text,
+.offerts .comments .text p{
+    text-align: left ;
+    font-size: 18px
+}
+.offerts .ui.comments .comment .comments{
+    padding: 15px;
+    margin-left: 0;
+    background: #eee;
+}
+
+input.addPhoto{display: none;}
+label[for="offertPhoto"],
+label[for="addPhoto"]{
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #DEDEDE;
+    color: #666;
+    padding: 2em 0;
+    clear: both;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: .28571429rem;
+}
+label[for="offertPhoto"]:hover,
+label[for="offertPhoto"]:active,
+label[for="addPhoto"]:hover,
+label[for="addPhoto"]:active{
+    background-color: #666;
+    border-color: #666;
+    color: #fff;
+}
+.field{
+    position: relative;
+}
+.countCharacters{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* mobie view */
+@media only screen and (max-width:767px){
+    .addOneAdd{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .search{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .button span.buttonText{
+        display: none;
+    }
+    .anuncio_home p{
+        font-size: 2em;
+    }
+}

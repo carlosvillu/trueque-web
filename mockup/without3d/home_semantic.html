@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test mockup Trueke with Semantic-UI</title>
+
+        <link rel="stylesheet" href="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.css">
+        <link rel="stylesheet" href="css/style_semantic.css">
+    </head>
+    <body>
+
+        <!--  TOP MENU
+        ----------------------------------------------------------------------->
+        <section class="ui top borderless menu clearfix topMenu">
+            <div class="ui grid three columns centered container">
+                <div class="left aligned column search">
+                    <div class="ui button icon blue searchButton">
+                        <i class="search icon"></i> <span class="buttonText">Buscar</span>
+                    </div>
+                </div>
+                <div class="center aligned column siteTitle">
+                    <a href="#"><h1>Trueke</h1></a>
+                </div>
+                <div class="right aligned column addOneAdd">
+                    <div class="ui button icon blue adButton">
+                        <i class="add icon"></i> <span class="buttonText">Nuevo Anuncio</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--  SEARCH
+        ----------------------------------------------------------------------->
+        <div class="container searchModal">
+            <div class="icon-topRight ui button icon basic searchButton">
+              <i class="close icon big"></i>
+            </div>
+            <div class="center aligned column searchBar formMargin">
+              <div class="ui massive icon input">
+                <input type="text" placeholder="Escribe aquí">
+                <i class="search icon"></i>
+              </div>
+            </div>
+        </div>
+
+        <!--  NEW AD
+        ----------------------------------------------------------------------->
+        <div class="container adModal">
+            <div class="icon-topRight ui button icon basic adButton">
+              <i class="close icon big"></i>
+            </div>
+            <div class="formMargin">
+              <form class="ui reply form">
+                  <h2 class="header">Nuevo anuncio</h2>
+                    <div class="field">
+                      <input type="text" name="name" placeholder="Nombre" />
+                    </div>
+                    <div class="field">
+                      <input type="text" name="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea></textarea>
+                        <div class="countCharacters">
+                            123
+                        </div>
+                    </div>
+                    <input type="file" id="addPhoto" name="addPhoto" class="addPhoto" value="">
+                    <label for="addPhoto">Arrastra una foto o haz click aquí</label>
+
+                    <div class="ui blue labeled submit icon button">
+                      <i class="icon send"></i> Enviar
+                    </div>
+              </form>
+          </div>
+        </div>
+
+        <!--  ADS LIST
+        ----------------------------------------------------------------------->
+        <section class="ui stackable grid container">
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards ad1">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide tablet four wide computer column">
+                <div class="ui link cards">
+                    <div class="card">
+                        <div class="image">
+                            <img class="ui fluid image" src="http://placehold.it/200x200" alt="lorem" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  SINGLE AD
+        ----------------------------------------------------------------------->
+        <div class="container singleAdModal singleAd1">
+          <div class="icon-topRight ui button icon basic ad1">
+            <i class="close icon big"></i>
+          </div>
+          <div class="content">
+            <div class="singleAddContainer ">
+                <img src="http://placehold.it/900x600" alt="lorem" />
+                <h2 class="header">Descripción del producto</h2>
+                <p class="description">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+
+            <!--  OFFERTS
+            ------------------------------------------------------------------->
+              <div class="divider"></div>
+              <div class="offerts">
+                  <div class="ui comments">
+                      <h2 class="header">Ofertas</h2>
+
+                      <div class="comment">
+                          <a class="author">Matt</a>
+                          <div class="metadata">
+                              <span class="date">Hoy a las 5:42PM</span>
+                          </div>
+                          <div class="imageComment">
+                              <img src="http://placehold.it/600x600" alt="lorem" class="ui fluid image" />
+                          </div>
+                          <div class="text">
+                              Te oferto este lechón
+                          </div>
+                          <div class="actions">
+                              <a class="reply">Responder</a>
+                          </div>
+                      </div>
+                      <div class="comment author">
+                          <a class="author">Matt</a>
+                          <div class="metadata">
+                              <span class="date">Hoy a las 5:42PM</span>
+                          </div>
+                          <div class="text">
+                              Gracias! que rico
+                          </div>
+                      </div>
+                      <div class="comment">
+                          <a class="author">Matt</a>
+                          <div class="metadata">
+                              <span class="date">Hoy a las 5:42PM</span>
+                          </div>
+                          <div class="imageComment">
+                              <img src="http://placehold.it/900x600" alt="lorem" class="ui fluid image" />
+                          </div>
+                          <div class="text">
+                              Te oferto este lechón
+                          </div>
+                      </div>
+
+                      <!-- Reply Form
+                      --------------------------------------------------------->
+                      <form class="ui reply form">
+                          <h2 class="header">Ofertar</h2>
+                            <div class="field">
+                              <input type="text" name="name" placeholder="Nombre" />
+                            </div>
+                            <div class="field">
+                                <textarea></textarea>
+                                <div class="countCharacters">
+                                    123
+                                </div>
+                            </div>
+                            <input type="file" id="offertPhoto" name="addPhoto" class="addPhoto" value="">
+                            <label for="offertPhoto">Arrastra una foto o haz click aquí</label>
+
+                            <div class="ui blue labeled submit icon button">
+                              <i class="icon send"></i> Enviar
+                            </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  NAVIGATION
+        ----------------------------------------------------------------------->
+        <div class="ui grid container">
+            <div class="sixteen wide centered row">
+              <div class="ui blue submit icon button">
+                Cargar más anuncios
+              </div>
+            </div>
+        </div>
+
+        <!--  JS
+        ----------------------------------------------------------------------->
+        <script src="//oss.maxcdn.com/jquery/2.2.0/jquery.min.js"></script>
+        <script src="//oss.maxcdn.com/semantic-ui/2.1.8/semantic.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            <!-- Search Modal -->
+            $(".searchButton").click(function(){
+                $(".searchModal").toggle(300);
+            });
+
+            <!-- New Ad Modal -->
+            $(".adButton").click(function(){
+                $(".adModal").toggle(300);
+            });
+
+            <!-- Single Add Modal -->
+            $(".ad1").click(function(){
+                $(".singleAd1").fadeToggle(600);
+            });
+
+            <!-- ImgOfferts Expand -->
+            $(".imageComment").click(function(){
+                $(this).toggleClass('is-expanded')
+            })
+          });
+        </script>
+
+    </body>
+</html>
